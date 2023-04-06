@@ -15,7 +15,6 @@ html {
   min-height: 100vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  cursor: pointer;
 }
 
 body {
@@ -71,21 +70,44 @@ main section:not(:first-child) > form {
 }
 
 form label {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 
 form input {
-  min-width: 16rem;
-  padding: 1rem;
+  font-size: 1.2rem;
+  width: 50vw;
+  padding: 1.3rem;
   border: none;
+}
+
+div span {
+  font-size: 1.5rem;
+  display: inline;
+  align-items: center;
 }
 
 form button {
   min-width: 5rem;
+  max-width: 9rem;
   padding: 1rem;
   font-size: 1.7rem;
   font-family: inherit;
   border: none;
   background-color: var(--header-background-color);
   color: var(--text-color);
+  cursor: pointer;
+}
+
+.icon-minus::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f056";
+}
+
+.add-items-to-shoping {
+  color: var(--text-color);
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
 }
